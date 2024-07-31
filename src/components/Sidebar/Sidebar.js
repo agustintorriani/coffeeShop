@@ -3,7 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import { Nav } from "reactstrap";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
-
 import logo from "../../assets/img/logo.png";
 
 var ps;
@@ -52,7 +51,7 @@ function Sidebar(props) {
       </div>
       <div className="sidebar-wrapper" ref={sidebar}>
         <Nav>
-          {props.routes.map((prop, key) => {
+          {props.routes.filter(route => route.visibleEnSidebar).map((prop, key) => {
             return (
               <li
                 className={

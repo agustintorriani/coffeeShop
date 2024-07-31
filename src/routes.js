@@ -4,8 +4,9 @@ import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
 import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
-import UserPage from "views/User.js";
-import UpgradeToPro from "views/Upgrade.js";
+import Productos from "views/Productos";
+import Perfil from "views/Perfil";
+import NuevoProducto from "views/NuevoProducto";
 
 var routes = [
   {
@@ -17,8 +18,16 @@ var routes = [
     visibleEnSidebar: true
   },
   {
-    path: "/icons",
+    path: "/productos",
     name: "Productos",
+    icon: "nc-icon nc-bag-16",
+    component: <Productos />,
+    layout: "/admin",
+    visibleEnSidebar: true
+  },
+  {
+    path: "/icons",
+    name: "Iconos",
     icon: "nc-icon nc-bag-16",
     component: <Icons />,
     layout: "/admin",
@@ -46,13 +55,13 @@ var routes = [
     icon: "nc-icon nc-tile-56",
     component: <TableList />,
     layout: "/admin",
-    visibleEnSidebar: true
+    visibleEnSidebar: false
   },
   {
     path: "/user-page",
     name: "Perfil",
     icon: "nc-icon nc-single-02",
-    component: <UserPage />,
+    component: <Perfil />,
     layout: "/admin",
     visibleEnSidebar: true
   },
@@ -63,6 +72,14 @@ var routes = [
     component: <Typography />,
     layout: "/admin",
     visibleEnSidebar: false
-  }
+  },
+  {
+    path: "/agregar-producto",
+    name: "Productos",
+    icon: "nc-icon nc-bag-16",
+    component: <NuevoProducto />,
+    layout: "/admin",
+    visibleEnSidebar: false
+  },
 ];
-export default routes.filter(route => route.visibleEnSidebar);
+export default routes;

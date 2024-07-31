@@ -1,35 +1,20 @@
-/*!
 
-=========================================================
-* Paper Dashboard React - v1.3.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 const dashboard24HoursPerformanceChart = {
   data: (canvas) => {
     return {
       labels: [
-        "Jan",
+        "Ene",
         "Feb",
         "Mar",
-        "Apr",
+        "Abr",
         "May",
         "Jun",
         "Jul",
-        "Aug",
+        "Ago",
         "Sep",
         "Oct",
+        "Nov",
+        "Dic",
       ],
       datasets: [
         {
@@ -152,26 +137,26 @@ const dashboardNASDAQChart = {
   data: (canvas) => {
     return {
       labels: [
-        "Jan",
+        "Ene",
         "Feb",
         "Mar",
-        "Apr",
+        "Abr",
         "May",
         "Jun",
         "Jul",
-        "Aug",
+        "Ago",
         "Sep",
         "Oct",
         "Nov",
-        "Dec",
+        "Dic",
       ],
       datasets: [
         {
           data: [0, 19, 15, 20, 30, 40, 40, 50, 25, 30, 50, 70],
           fill: false,
-          borderColor: "#fbc658",
+          borderColor: "#ef8157",
           backgroundColor: "transparent",
-          pointBorderColor: "#fbc658",
+          pointBorderColor: "#ef8157",
           pointRadius: 4,
           pointHoverRadius: 4,
           pointBorderWidth: 8,

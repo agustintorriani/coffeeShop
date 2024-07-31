@@ -109,26 +109,16 @@ function Header(props) {
           <span className="navbar-toggler-bar navbar-kebab" />
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className="justify-content-end">
-          <form>
-            <InputGroup className="no-border">
-              <Input placeholder="Search..." />
-              <InputGroupAddon addonType="append">
-                <InputGroupText>
-                  <i className="nc-icon nc-zoom-split" />
-                </InputGroupText>
-              </InputGroupAddon>
-            </InputGroup>
-          </form>
           <Nav navbar>
-            <NavItem>
+            {/* <NavItem>
               <Link to="#pablo" className="nav-link btn-magnify">
                 <i className="nc-icon nc-layout-11" />
                 <p>
                   <span className="d-lg-none d-md-block">Stats</span>
                 </p>
               </Link>
-            </NavItem>
-            <Dropdown
+            </NavItem> */}
+            {/* <Dropdown
               nav
               isOpen={dropdownOpen}
               toggle={(e) => dropdownToggle(e)}
@@ -152,7 +142,7 @@ function Header(props) {
                   <span className="d-lg-none d-md-block">Account</span>
                 </p>
               </Link>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>
