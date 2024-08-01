@@ -9,11 +9,11 @@ async function login(email, password) {
   myHeaders.append("Accept-Encoding","gzip, deflate, br");
 
     // const secretKey = myConfig.secretKey;
-    // var raw = JSON.stringify({
-    //   email: email,
-    //   password: CryptoJS.AES.encrypt(password, secretKey).toString(),
-    //   //password: password,
-    // });
+    var raw = JSON.stringify({
+      email: 'agustintorriani@gmail.com',
+      password: CryptoJS.AES.encrypt(password, secretKey).toString(),
+      //password: password,
+    });
 
   var requestOptions = {
     method: "POST",

@@ -1,4 +1,4 @@
-async function addToList(registro) {
+async function agregarProducto(registro) {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-acces-token", window.sessionStorage.getItem("token"));
@@ -29,7 +29,7 @@ async function addToList(registro) {
     }
   }
   
-  async function getListByFilm(userId, filmId) {
+  async function obtenerProductos(userId, filmId) {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("x-access-token", window.sessionStorage.getItem("token"));
